@@ -1,0 +1,945 @@
+<div class="alt-prop" data-anchor="">
+
+        <h1 class="titulo-pagina">Remuneração</h1>
+
+        <div id="painel-identificacao-evento">
+                <span class="info">
+                    <span class="valor">MAURICIO DANTAS</span>
+                </span>
+            <span class="info">
+                <span class="rotulo">CPF</span> <span class="valor">004.240.659-59</span>
+            </span>
+            <span class="info">
+                <span class="rotulo">Período de Competência</span> <span class="valor">04/2026</span>
+            </span>
+        </div>
+
+        <a id="controle-incluir-rubrica" class="btn btn-primary btn-lg novo-periodo pull-right  disabled  " href="javascript:void(0)" onclick="PrepararInclusaoRubrica()">Incluir Rubrica</a>
+
+        <div id="info-base" class="row">
+            <fieldset>
+                
+
+            </fieldset>
+        </div>
+
+        <br>
+
+        <section id="formulario-rubrica" class="hide">
+            <fieldset>
+                <div class="row">
+                    <span class="texto-acao">
+                        Esta rubrica faz parte do demonstrativo <span class="select-inline"><select class="form-control" id="RubricaAcessoria_Identificador" name="RubricaAcessoria.Identificador"><option value="P2604F90X0000-E1763F303">P2604F90X0000-E1763F303</option>
+<option value="Outro">Outro</option>
+</select></span>
+                    </span>
+                    <div class="checkbox-inline pull-right">
+                        <input type="checkbox" id="checkbox-notificacao-fgts">
+                        Confissão originada de notificação de débito de FGTS?
+                    </div>
+                </div>
+
+                <div id="demonstrativo" class="hide">
+                    <h2 class="titulo-tabela">Demonstrativo</h2>
+                    <fieldset>
+                        <div class="row">
+                            <span id="demonstrativo-identificador" class="hide">
+                                <div class="form-group col-md-4 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].IdentificadorDemonstrativo" text="Identificador" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Identificador atribuído pela empresa para o demonstrativo de pagamento.">Identificador<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/ideDmDev" class="form-control C  required " id="EventoAcessorio_DemonstrativosValoresDevidos_0__IdentificadorDemonstrativo" maxlength="30" name="EventoAcessorio.DemonstrativosValoresDevidos[0].IdentificadorDemonstrativo" type="text" value="001" aria-required="true"><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].IdentificadorDemonstrativo" data-valmsg-replace="true"></span></span></div>
+                            </span>
+                            <div id="div-numero-notificacao-fgts" class="hide">
+                                <div class="form-group col-md-6 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].NumeroNotificacaoAfastamentoFGTS" text="Número da notificação de FGTS que deu origem à confissão" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número da notificação de FGTS que deu origem à confissão">Número da notificação de FGTS que deu origem à confissão</label><span><input caminho-completo="eSocial/evtRemun/dmDev/notAFT" class="form-control C " id="EventoAcessorio_DemonstrativosValoresDevidos_0__NumeroNotificacaoAfastamentoFGTS" maxlength="9" minlength="9" name="EventoAcessorio.DemonstrativosValoresDevidos[0].NumeroNotificacaoAfastamentoFGTS" readonly="True" type="text" value=""><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].NumeroNotificacaoAfastamentoFGTS" data-valmsg-replace="true"></span></span></div>
+                            </div>
+                            <input data-val="true" data-val-number="O campo Categoria deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="RubricaAcessoria_Categoria" name="RubricaAcessoria.Categoria" type="hidden" value="0">
+                        </div>
+                    </fieldset>
+                </div>
+
+                <h2 class="titulo-tabela">Contrato</h2>
+
+                <fieldset>
+                    <div class="row">
+                        <div class="form-group col-md-4 col-sm-4">
+                            <label for="RubricaAcessoria_Contrato" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Matrícula/Categoria">Matrícula/Categoria<em class="tag-campo-obrigatorio">*</em></label>
+                            <select class="form-control required" id="RubricaAcessoria_Contrato" name="RubricaAcessoria.Contrato" aria-required="true"><optgroup label="Contratos Com Vínculo">
+<option value="C_39749994583_101">Matrícula 17630000303 - Categoria 101</option>
+</optgroup>
+<optgroup label="Todas as Categorias">
+<option value="101">101 - Empregado - Geral, inclusive o empregado público da administração direta ou indireta contratado pela CLT</option>
+<option value="102">102 - Empregado - Trabalhador rural por pequeno prazo da Lei 11.718/2008</option>
+<option value="103">103 - Empregado - Aprendiz</option>
+<option value="105">105 - Empregado - Contrato a termo firmado nos termos da Lei 9.601/1998</option>
+<option value="106">106 - Trabalhador temporário - Contrato nos termos da Lei 6.019/1974</option>
+<option value="107">107 - Empregado - Contrato de trabalho Verde e Amarelo - sem acordo para antecipação mensal da multa rescisória do FGTS</option>
+<option value="108">108 - Empregado - Contrato de trabalho Verde e Amarelo - com acordo para antecipação mensal da multa rescisória do FGTS</option>
+<option value="111">111 - Empregado - Contrato de trabalho intermitente</option>
+<option value="201">201 - Trabalhador avulso portuário</option>
+<option value="202">202 - Trabalhador avulso não portuário</option>
+<option value="301">301 - Servidor público titular de cargo efetivo, magistrado, ministro de Tribunal de Contas, conselheiro de Tribunal de Contas e membro do Ministério Público</option>
+<option value="302">302 - Servidor público ocupante de cargo exclusivo em comissão</option>
+<option value="303">303 - Exercente de mandato eletivo</option>
+<option value="304">304 - Servidor público exercente de mandato eletivo, inclusive com exercício de cargo em comissão</option>
+<option value="305">305 - Servidor público indicado para conselho ou órgão deliberativo, na condição de representante do governo, órgão ou entidade da administração pública</option>
+<option value="306">306 - Servidor público contratado por tempo determinado, sujeito a regime administrativo especial definido em lei própria</option>
+<option value="307">307 - Militar dos Estados e Distrito Federal</option>
+<option value="308">308 - Conscrito</option>
+<option value="309">309 - Agente público - Outros</option>
+<option value="310">310 - Servidor público eventual</option>
+<option value="311">311 - Ministros, juízes, procuradores, promotores ou oficiais de justiça à disposição da Justiça Eleitoral</option>
+<option value="312">312 - Auxiliar local</option>
+<option value="313">313 - Servidor público exercente de atividade de instrutoria, curso ou concurso, convocado para pareceres técnicos, depoimentos, aditância no exterior ou demais atividades vinculadas ao regime próprio</option>
+<option value="314">314 - Militar das Forças Armadas</option>
+<option value="401">401 - Dirigente sindical - Informação prestada pelo sindicato</option>
+<option value="410">410 - Trabalhador cedido/exercício em outro órgão/juiz auxiliar - Informação prestada pelo cessionário/destino</option>
+<option value="501">501 - Dirigente sindical - Segurado especial</option>
+<option value="701">701 - Contribuinte individual - Autônomo em geral, exceto se enquadrado em uma das demais categorias de contribuinte individual</option>
+<option value="711">711 - Contribuinte individual - Transportador autônomo de passageiros</option>
+<option value="712">712 - Contribuinte individual - Transportador autônomo de carga</option>
+<option value="721">721 - Contribuinte individual - Diretor não empregado, com FGTS</option>
+<option value="722">722 - Contribuinte individual - Diretor não empregado, sem FGTS</option>
+<option value="723">723 - Contribuinte individual - Empresário, sócio e membro de conselho de administração ou fiscal</option>
+<option value="731">731 - Contribuinte individual - Cooperado que presta serviços por intermédio de cooperativa de trabalho</option>
+<option value="734">734 - Contribuinte individual - Transportador cooperado que presta serviços por intermédio de cooperativa de trabalho</option>
+<option value="738">738 - Contribuinte individual - Cooperado filiado a cooperativa de produção</option>
+<option value="741">741 - Contribuinte individual - Microempreendedor individual</option>
+<option value="751">751 - Contribuinte individual - Magistrado classista temporário da Justiça do Trabalho ou da Justiça Eleitoral que seja aposentado de qualquer regime previdenciário</option>
+<option value="761">761 - Contribuinte individual - Associado eleito para direção de cooperativa, associação ou entidade de classe de qualquer natureza ou finalidade, bem como o síndico ou administrador eleito para exercer atividade de direção condominial, desde que recebam remuneração</option>
+<option value="771">771 - Contribuinte individual - Membro de conselho tutelar, nos termos da Lei 8.069/1990</option>
+<option value="781">781 - Ministro de confissão religiosa ou membro de vida consagrada, de congregação ou de ordem religiosa</option>
+<option value="901">901 - Estagiário</option>
+<option value="902">902 - Médico residente, residente em área profissional de saúde ou médico em curso de formação</option>
+<option value="903">903 - Bolsista</option>
+<option value="904">904 - Participante de curso de formação, como etapa de concurso público, sem vínculo de emprego/estatutário</option>
+<option value="905">905 - Atleta não profissional em formação que receba bolsa</option>
+<option value="906">906 - Beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário</option>
+</optgroup>
+</select>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-4 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].CodigoLotacao" text="Lotação Tributária" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Lotação">Lotação Tributária<em class="tag-campo-obrigatorio">*</em></label><span><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/codLotacao" class="form-control C  required  autocomplete-pesquisa ui-autocomplete-input" id="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__CodigoLotacao" maxlength="30" name="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].CodigoLotacao" type="text" value="" aria-required="true" placeholder="Informe o código da lotação" autocomplete="off"><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].CodigoLotacao" data-valmsg-replace="true"></span><input type="hidden" name="valorFoiSelecionado" id="valorFoiSelecionado"></span></div>
+
+                        <div class="form-group col-md-2 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].TipoInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Tipo de Inscrição">Tipo de Inscrição<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/tpInsc" class="form-control N  required " data-val="true" data-val-number="O campo TipoInscricao deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__TipoInscricao" name="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].TipoInscricao" aria-required="true"><option value=""></option>
+<option selected="selected" value="1">1 - CNPJ</option>
+<option value="3">3 - CAEPF</option>
+<option value="4">4 - CNO</option>
+</select><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].TipoInscricao" data-valmsg-replace="true"></span></div></div>
+
+                        <div class="form-group col-md-3 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].NumeroInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número de Inscrição">Número de Inscrição<em class="tag-campo-obrigatorio">*</em></label><span><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/nrInsc" class="form-control C cnpj-alfanumerico required  autocomplete-pesquisa ui-autocomplete-input" id="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__NumeroInscricao" maxlength="18" name="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].NumeroInscricao" type="text" value="54.660.176/0001-07" aria-required="true" placeholder="Informe o número de inscrição" autocomplete="off"><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].NumeroInscricao" data-valmsg-replace="true"></span><input type="hidden" name="valorFoiSelecionado" id="valorFoiSelecionado"></span></div>
+                    </div>
+
+                    <input data-val="true" data-val-required="Campo de preenchimento obrigatório." id="RubricaAcessoria_ObrigatorioInformarQuantidadeDiasTrabalhados" name="RubricaAcessoria.ObrigatorioInformarQuantidadeDiasTrabalhados" type="hidden" value="False">
+                </fieldset>
+
+                <div id="controle-periodo" class="row">
+                    <div class="texto-acao">
+                        Esta rubrica refere-se a remuneração devida
+                        <div>
+                                <label class="radio-inline">
+                                    <input class="RubricaAcessoria_RubricaPeriodoApuracao_Sim" data-val="true" data-val-required="Campo de preenchimento obrigatório." type="radio" value="True" name="RubricaPeriodoApuracao"> No período de apuração (04/2026)
+                                </label>
+                                <label class="radio-inline">
+                                    <input class="RubricaAcessoria_RubricaPeriodoApuracao_Nao" data-val="true" data-val-required="Campo de preenchimento obrigatório." type="radio" value="False" name="RubricaPeriodoApuracao"> Em período anterior
+                                </label>
+                        </div>
+                    </div>
+                </div>
+
+                <input data-val="true" data-val-required="Campo de preenchimento obrigatório." id="RubricaAcessoria_RubricaPeriodoApuracao" name="RubricaAcessoria.RubricaPeriodoApuracao" type="hidden" value="True">
+                <input id="EventoAcessorio_PeriodoApuracao" name="EventoAcessorio.PeriodoApuracao" type="hidden" value="202604">
+                <input data-val="true" data-val-number="O campo NaturezaRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="RubricaAcessoria_NaturezaRubrica" name="RubricaAcessoria.NaturezaRubrica" type="hidden" value="0">
+
+                <div id="periodo-apuracao" class="hide">
+                    <h2 class="titulo-tabela">Detalhes da Remuneração Devida em Período Anterior</h2>
+
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group col-md-2 col-sm-2">
+                                <label for="RubricaAcessoria.PeriodoApuracao" text="Período de Referência" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Período de Referência">Período de Referência<em class="tag-campo-obrigatorio">*</em></label>
+                                <span>
+                                    <input class="required periodo-apuracao-rubrica-menor form-control" id="RubricaAcessoria_PeriodoApuracao" name="RubricaAcessoria.PeriodoApuracao" size="7" type="text" value="04/2026" aria-required="true" maxlength="8" minlength="4">
+                                    <span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.PeriodoApuracao" data-valmsg-replace="true"></span>
+                                </span>
+                            </div>
+
+<div class="form-group col-md-6 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].TipoAcordoConvencao" text="Tipo do Instrumento Ensejador da Remuneração" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Tipo de Acordo">Tipo do Instrumento Ensejador da Remuneração<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoPerAnt/ideADC/tpAcConv" class="form-control C  required " id="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracaoAnterior_ListaIdeADC_0__TipoAcordoConvencao" name="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].TipoAcordoConvencao" retirardodatasource="System.Collections.Generic.List`1[System.String]" suprimiroptionvazio="True" aria-required="true"><option value="A">A - Acordo Coletivo de Trabalho</option>
+<option value="B">B - Legislação federal, estadual, municipal ou distrital</option>
+<option value="C">C - Convenção Coletiva de Trabalho</option>
+<option value="D">D - Sentença normativa - Dissídio</option>
+<option value="E">E - Conversão de licença saúde em acidente de trabalho</option>
+<option value="F">F - Outras verbas de natureza salarial ou não salarial devidas após o desligamento</option>
+<option value="G">G - Antecipação de diferenças de acordo, convenção ou dissídio coletivo</option>
+<option value="H">H - Recolhimento mensal de FGTS anterior ao início de obrigatoriedade dos eventos periódicos</option>
+<option value="I">I - Sentença judicial (exceto reclamatória trabalhista)</option>
+<option value="J">J - Parcelas complementares conhecidas após o fechamento da folha</option>
+</select><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].TipoAcordoConvencao" data-valmsg-replace="true"></span></div></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-md-2 col-sm-2"><label for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].DataAcordoConvencao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Data da assinatura do acordo" style="">Data da assinatura do acordo<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerAnt/ideADC/dtAcConv" class="form-control D  required hasDatepicker" data-val="true" data-val-date="O campo DataAcordoConvencao deve ser uma data." id="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracaoAnterior_ListaIdeADC_0__DataAcordoConvencao" maxlength="10" name="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].DataAcordoConvencao" type="text" value="" data-val-required="Campo de preenchimento obrigatório." aria-required="true" aria-describedby="EventoAcessorio_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracaoAnterior_ListaIdeADC_0__DataAcordoConvencao-error" aria-invalid="false" autocomplete="off"><button type="button" class="ui-datepicker-trigger">23</button><span class="field-validation-valid" data-valmsg-for="EventoAcessorio.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracaoAnterior.ListaIdeADC[0].DataAcordoConvencao" data-valmsg-replace="true"></span></span></div>
+
+                            
+
+                            
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-2 col-sm-2"><label for="RubricaAcessoria.Rubrica.IdeTabelaRubrica" text="Tabela de Rubricas" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Identificador da tabela de rubricas">Tabela de Rubricas<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/ideTabRubr" class="form-control C  required " id="RubricaAcessoria_Rubrica_IdeTabelaRubrica" maxlength="8" name="RubricaAcessoria.Rubrica.IdeTabelaRubrica" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.IdeTabelaRubrica" data-valmsg-replace="true"></span></span></div>
+                    <div class="form-group col-md-4 col-sm-2"><label for="RubricaAcessoria.Rubrica.CodigoRubrica" text="Código da Rubrica" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Descrição">Código da Rubrica<em class="tag-campo-obrigatorio">*</em></label><span><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/codRubr" class="form-control C  required  autocomplete-pesquisa ui-autocomplete-input" id="RubricaAcessoria_Rubrica_CodigoRubrica" maxlength="30" name="RubricaAcessoria.Rubrica.CodigoRubrica" type="text" value="" aria-required="true" placeholder="Informe o código ou a descrição da rubrica" autocomplete="off"><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.CodigoRubrica" data-valmsg-replace="true"></span><input type="hidden" name="valorFoiSelecionado" id="valorFoiSelecionado"></span></div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group col-md-2 col-sm-2"><label for="RubricaAcessoria.Rubrica.QuantidadeRubrica" text="Quantidade" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Qtde">Quantidade</label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/qtdRubr" class="form-control N  dinheiro maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" id="RubricaAcessoria_Rubrica_QuantidadeRubrica" maxlength="14" name="RubricaAcessoria.Rubrica.QuantidadeRubrica" type="text" value=""><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.QuantidadeRubrica" data-valmsg-replace="true"></span></span></div>
+                    <div class="form-group col-md-2 col-sm-2"><label for="RubricaAcessoria.Rubrica.FatorRubrica" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Fator Rubrica">Fator Rubrica</label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/fatorRubr" class="form-control N dinheiro maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" id="RubricaAcessoria_Rubrica_FatorRubrica" maxlength="6" name="RubricaAcessoria.Rubrica.FatorRubrica" type="text" value="" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.FatorRubrica" data-valmsg-replace="true"></span></span></div>
+                    
+                    <div class="form-group col-md-2 col-sm-2"><label for="RubricaAcessoria.Rubrica.ValorRubrica" text="Valor Total" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Valor (R$)">Valor Total<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/vrRubr" class="form-control N dinheiro valor-positivo required  maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" data-val-required="Campo de preenchimento obrigatório." id="RubricaAcessoria_Rubrica_ValorRubrica" maxlength="18" name="RubricaAcessoria.Rubrica.ValorRubrica" type="text" value="" aria-required="true" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.ValorRubrica" data-valmsg-replace="true"></span></span></div>
+                </div>
+
+                
+                <div class="row eConsignado_v1_3 hide">
+                    <div class="form-group col-md-6 col-sm-2"><label for="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.InstituicaoFinanceira" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Código da Instituição Financeira concedente do empréstimo">Código da Instituição Financeira concedente do empréstimo<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/descFolha/instFinanc" class="form-control C required vep-autocomplete " id="RubricaAcessoria_Rubrica_DescontoEmprestimoFolha_InstituicaoFinanceira" name="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.InstituicaoFinanceira" aria-required="true" style="display: none;"><option value=""></option>
+<option value="001">001 - BANCO DO BRASIL S A</option>
+<option value="003">003 - Amazonia BASA</option>
+<option value="004">004 - BANCO DO NORDESTE DO BRASIL SA  BNB</option>
+<option value="007">007 - BNDES</option>
+<option value="012">012 - BANCO INBURSA SA</option>
+<option value="021">021 - BANCO DO ESTADO DO ESPIRITO SANTO</option>
+<option value="029">029 - Itau Consignado S A</option>
+<option value="033">033 - SANTANDER</option>
+<option value="041">041 - BANCO DO ESTADO DO RIO GRANDE DO SUL SA</option>
+<option value="047">047 - BANCO DO ESTADO DE SERGIPE SA</option>
+<option value="069">069 - BANCO CREFISA SA</option>
+<option value="070">070 - BANCO DE BRASILIA S A BRB</option>
+<option value="074">074 - Banco J Safra</option>
+<option value="077">077 - BANCO INTER</option>
+<option value="079">079 - PICPAY BANK</option>
+<option value="081">081 - BANCO SEGURO SA</option>
+<option value="082">082 - Banco Topázio</option>
+<option value="085">085 - AILOS - COOPERATIVA CENTRAL DE CRÉDITO</option>
+<option value="088">088 - RANDON</option>
+<option value="099">099 - UNIPRIME</option>
+<option value="104">104 - CAIXA ECONOMICA FEDERAL</option>
+<option value="105">105 - LECCA</option>
+<option value="120">120 - RODOBENS</option>
+<option value="121">121 - BANCO AGIBANK SA</option>
+<option value="133">133 - CRESOL</option>
+<option value="136">136 - UNICRED</option>
+<option value="159">159 - CASA DO CREDITO</option>
+<option value="174">174 - PEFISA</option>
+<option value="189">189 - HS Financeira</option>
+<option value="195">195 - VALOR S/A</option>
+<option value="208">208 - BTG PACTUAL S.A.</option>
+<option value="213">213 - BANCO ARBI S A</option>
+<option value="218">218 - BS2</option>
+<option value="233">233 - Banco Cifra S A</option>
+<option value="237">237 - BANCO BRADESCO S A</option>
+<option value="243">243 - BANCO MASTER S A</option>
+<option value="254">254 - PARANA BANCO S A</option>
+<option value="274">274 - BMP MONEY PLUS</option>
+<option value="276">276 - SENFF SA</option>
+<option value="280">280 - Will Financeira S.A.</option>
+<option value="281">281 - COOPAVEL</option>
+<option value="310">310 - VORTX</option>
+<option value="318">318 - BANCO BMG S A</option>
+<option value="321">321 - CREFAZ</option>
+<option value="323">323 - MERCADO PAGO</option>
+<option value="324">324 - CARTOS</option>
+<option value="328">328 - POUPECREDI</option>
+<option value="329">329 - QI SOCIEDADE DE CREDITO DIRETO S A</option>
+<option value="330">330 - BARI S A</option>
+<option value="334">334 - BANCO BESA</option>
+<option value="335">335 - Banco Digio - Bradesco</option>
+<option value="336">336 - C6 S.A</option>
+<option value="341">341 - BANCO ITAU SA</option>
+<option value="342">342 - CREDITAS</option>
+<option value="343">343 - FFA-SEJAVIPE</option>
+<option value="348">348 - BANCO XP S A</option>
+<option value="349">349 - AL5</option>
+<option value="358">358 - MIDWAY</option>
+<option value="359">359 - ZEMA CFI S A</option>
+<option value="368">368 - CARREFOUR</option>
+<option value="373">373 - UP.P</option>
+<option value="377">377 - BMS</option>
+<option value="379">379 - COOPERFORTE</option>
+<option value="380">380 - PICPAY</option>
+<option value="385">385 - CREDESTIVA</option>
+<option value="386">386 - Nubank</option>
+<option value="389">389 - BANCO MERCANTIL DO BRASIL S A</option>
+<option value="393">393 - BANCO VOLKSWAGEN</option>
+<option value="394">394 - BANCO BRADESCO FINANCIAMENTOS S A</option>
+<option value="402">402 - AGIL</option>
+<option value="413">413 - BANCO BV S.A,</option>
+<option value="418">418 - ZIPDIN - SOLUÇÕES DIGITAIS SOCIED CRED</option>
+<option value="422">422 - BANCO SAFRA S A</option>
+<option value="425">425 - SOCINAL S.A.</option>
+<option value="426">426 - NEON</option>
+<option value="427">427 - CRED.UFES</option>
+<option value="435">435 - DELBANK</option>
+<option value="440">440 - CREDIGENTE</option>
+<option value="443">443 - CREDIHOME SCD</option>
+<option value="444">444 - Trinus</option>
+<option value="449">449 - DM SCD</option>
+<option value="451">451 - J17</option>
+<option value="452">452 - CREDIFIT - SOCIED CRÉDITO DIRETO SA</option>
+<option value="457">457 - UY3</option>
+<option value="465">465 - CAPITAL CONSIG</option>
+<option value="468">468 - PORTOSEG</option>
+<option value="470">470 - CDC SDC</option>
+<option value="478">478 - Gazincred</option>
+<option value="510">510 - FFCRED</option>
+<option value="511">511 - MAGNUM</option>
+<option value="513">513 - ATF</option>
+<option value="516">516 - QISTA</option>
+<option value="520">520 - SOMAPAY</option>
+<option value="521">521 - PEAK</option>
+<option value="523">523 - HR DIGITAL</option>
+<option value="526">526 - MONETARIE</option>
+<option value="531">531 - BMP MONEY PLUS</option>
+<option value="532">532 - Futuro Sociedade de Crédito Direto S.A</option>
+<option value="536">536 - Neon</option>
+<option value="538">538 - SUDACRED</option>
+<option value="539">539 - SANTINVEST</option>
+<option value="540">540 - HBI SCD</option>
+<option value="543">543 - COOPCRECE</option>
+<option value="548">548 - EMPRESTA CAPITAL</option>
+<option value="553">553 - PERCAPITAL</option>
+<option value="555">555 - PAN FINANCEIRA</option>
+<option value="567">567 - MERCANTIL FINANCEIRA</option>
+<option value="572">572 - ALL IN CRED</option>
+<option value="585">585 - SETHI</option>
+<option value="589">589 - G5 SCD</option>
+<option value="598">598 - KONECT</option>
+<option value="610">610 - BANCO VR</option>
+<option value="611">611 - BANCO PAULISTA S A</option>
+<option value="623">623 - BANCO PAN S A</option>
+<option value="626">626 - BANCO C6 CONSIGNADO S A</option>
+<option value="632">632 - Z-ON</option>
+<option value="636">636 - GIRO SOCIEDADE DE CRÉDITO DIREITO</option>
+<option value="643">643 - BANCO PINE S A</option>
+<option value="644">644 - 321BANK SOCIEDADE DE CREDITO DIRETO S.A</option>
+<option value="654">654 - BANCO DIGIMAIS</option>
+<option value="655">655 - BANCO VOTORANTIM S A</option>
+<option value="668">668 - CELCOIN SOCIEDADE DE CRÉDITO DIRETO S/A</option>
+<option value="676">676 - DUFRIO</option>
+<option value="678">678 - FIDEM</option>
+<option value="680">680 - Delta Global Bank</option>
+<option value="707">707 - BANCO DAYCOVAL S A</option>
+<option value="714">714 - FINAMAX</option>
+<option value="739">739 - Banco Cetelem S A</option>
+<option value="741">741 - BRP - BANCO RIBEIRAO PRETO S.A.</option>
+<option value="743">743 - BANCO SEMEAR S A</option>
+<option value="748">748 - BANCO COOPERATIVO SICREDI S A</option>
+<option value="752">752 - CETELEM-BNP</option>
+<option value="753">753 - NOVO BANCO CONTINENTAL S A</option>
+<option value="756">756 - BANCO COOPERATIVO SICOOB S.A.</option>
+<option value="759">759 - BANSUR</option>
+<option value="760">760 - EMCASH</option>
+<option value="761">761 - URBANO</option>
+<option value="768">768 - Becker Financeira</option>
+<option value="774">774 - MOVA</option>
+<option value="794">794 - CREDES</option>
+<option value="796">796 - COOPLUIZA</option>
+<option value="801">801 - PILONCRED</option>
+<option value="803">803 - COOPASPACER</option>
+<option value="804">804 - COOPERATA</option>
+<option value="806">806 - BARRACRED</option>
+<option value="808">808 - Unilever</option>
+<option value="811">811 - COOPERATIVA DE ECONOMIA E CREDITO MUTUO</option>
+<option value="812">812 - COOPERFEMSA</option>
+<option value="813">813 - COGEM</option>
+<option value="814">814 - SKF</option>
+<option value="818">818 - MINUANO</option>
+<option value="819">819 - CREDMAXION</option>
+<option value="820">820 - COOPERFAC</option>
+<option value="825">825 - COOPERCREDS</option>
+<option value="828">828 - Colorado</option>
+<option value="830">830 - COOPERUNICAMP</option>
+<option value="835">835 - COOMAR</option>
+<option value="838">838 - CooPrincesa</option>
+<option value="842">842 - Coperura</option>
+<option value="843">843 - Cooperáguia</option>
+<option value="844">844 - SULCRED</option>
+<option value="846">846 - COOPERINFOR</option>
+<option value="853">853 - COOPITAU</option>
+<option value="855">855 - COOPINCOR</option>
+<option value="856">856 - COOPCREDMAIS</option>
+<option value="857">857 - COOPECIC</option>
+<option value="858">858 - C.B.A.</option>
+<option value="859">859 - COOPSELENE</option>
+<option value="862">862 - CRESAL</option>
+<option value="863">863 - PROMOCRED</option>
+<option value="867">867 - BASF</option>
+<option value="882">882 - NESCRED</option>
+<option value="885">885 - CredIndorama</option>
+<option value="889">889 - COOPACO</option>
+<option value="895">895 - COOPCOMLURB</option>
+<option value="896">896 - COOPSERGS</option>
+<option value="897">897 - Cooperativa Votorantim</option>
+<option value="899">899 - DTP BANCO</option>
+<option value="900">900 - CREDIBELGO</option>
+<option value="901">901 - BOC - Bank of China (antigo CCB Brasil)</option>
+<option value="902">902 - Crefisa</option>
+<option value="903">903 - BANCO INTER SA</option>
+<option value="905">905 - Alfa</option>
+<option value="908">908 - PARATI CFI S A</option>
+<option value="910">910 - SANTINVEST S A</option>
+<option value="917">917 - Socicred</option>
+<option value="921">921 - Crediare</option>
+<option value="922">922 - Lecca</option>
+<option value="925">925 - BRB Credito e Financiamento S A</option>
+<option value="926">926 - Mercantil Financeira Merc do Brasil Fin</option>
+<option value="927">927 - Caruana</option>
+<option value="932">932 - Gazincred</option>
+<option value="934">934 - AGIBANK FINANCEIRA S.A.</option>
+<option value="935">935 - FACTA FINANCEIRA S A</option>
+<option value="936">936 - Sicoob Coopernapi</option>
+<option value="954">954 - DIGIO</option>
+<option value="957">957 - Via Certa</option>
+<option value="961">961 - VALOR SCM</option>
+<option value="964">964 - FINANC   BECKER</option>
+<option value="965">965 - COOPER JOHNSON</option>
+<option value="966">966 - SABEMI SEGURADORA</option>
+<option value="968">968 - UNIAO SEGURADORA S A   VIDA PREVIDENCIA</option>
+<option value="970">970 - MIDWAY</option>
+<option value="971">971 - PINCRED</option>
+<option value="973">973 - COMPREV</option>
+<option value="993">993 - DTP BANCO 993</option>
+<option value="994">994 - DTP BANCO 994</option>
+<option value="995">995 - DTP BANCO 995</option>
+<option value="997">997 - DTP BANCO 997</option>
+<option value="999">999 - DTP BANCO</option>
+</select><span class="custom-combobox"><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input title="" name="autocomplete_RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.InstituicaoFinanceira" id="RubricaAcessoria_Rubrica_DescontoEmprestimoFolha_InstituicaoFinanceira" class="form-control C required vep-autocomplete custom-combobox-input ui-autocomplete-input" autocomplete="off" data-original-title=""><a tabindex="-1" data-original-title="" title="" class="custom-combobox-toggle ui-corner-right"></a></span><span class="field-validation-valid" data-valmsg-for="autocomplete_RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.InstituicaoFinanceira" data-valmsg-replace="true"></span></div></div>
+                    <div class="form-group col-md-3 col-sm-2"><label for="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.NumeroContratoEmprestimo" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número do contrato referente ao empréstimo">Número do contrato referente ao empréstimo<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/descFolha/nrDoc" class="form-control C required nrdoc-pattern" id="RubricaAcessoria_Rubrica_DescontoEmprestimoFolha_NumeroContratoEmprestimo" maxlength="15" name="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.NumeroContratoEmprestimo" data-valmsg-replace="true"></span></span></div>
+                    <div class="form-group col-md-12 col-sm-2"><label for="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.Observacao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Outras informações do desconto">Outras informações do desconto</label><span><textarea caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/descFolha/observacao" class="form-control C " cols="20" id="RubricaAcessoria_Rubrica_DescontoEmprestimoFolha_Observacao" maxlength="255" name="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.Observacao" rows="2"></textarea><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.DescontoEmprestimoFolha.Observacao" data-valmsg-replace="true"></span></span></div>
+                </div>
+
+                <div class="row">
+<div class="form-group col-md-6 col-sm-2" required="required" aria-required="true"><label for="RubricaAcessoria.Rubrica.IndicativoApuracaoIR" text="Indicativo de tipo de apuração de IR" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Indicativo de tipo de apuração de IR">Indicativo de tipo de apuração de IR<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/itensRemun/indApurIR" class="form-control N  required " data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="RubricaAcessoria_Rubrica_IndicativoApuracaoIR" name="RubricaAcessoria.Rubrica.IndicativoApuracaoIR" required="required" aria-required="true"><option value=""></option>
+<option value="0">0 - Normal (apuração sob a folha de pagamento declarada no eSocial)</option>
+<option value="1">1 - Situação especial de apuração de IR</option>
+</select><span class="field-validation-valid" data-valmsg-for="RubricaAcessoria.Rubrica.IndicativoApuracaoIR" data-valmsg-replace="true"></span></div></div>                </div>
+
+                <div class="row">
+                    <div class="form-group pull-right btn-group">
+                        <input id="alterar-rubrica" name="alterar:entidade" type="submit" value="Alterar" class="btn btn-primary pull-right hide">
+                        <input id="incluir-rubrica" name="incluir:entidade" type="submit" value="Incluir" class="btn btn-primary pull-right ">
+
+                        <a class="btn btn-cancelar pull-left" href="javascript:void(0)" onclick="$('#controle-incluir-rubrica').toggleClass('hide'); $('#formulario-rubrica').toggleClass('hide'); $('#demonstrativo-identificador').addClass('hide');$.scrollTo('#painel-identificacao-evento', 400, { offset: -30 })">Cancelar</a>
+                    </div>
+                </div>
+            </fieldset>
+        </section>
+
+        <br>
+
+        <section id="demonstrativos">
+                                <div class="painel-remuneracao" id="painel-remuneracao0_0_0_0">
+                                    <span class="identificador-demonstrativo" title="P2604F90X0000-E1763F303"><span class="valor">P2604F90X0000-E1763F303</span> <span class="rotulo">Demonstrativo</span></span>
+                                    <input id="Evento_DemonstrativosValoresDevidos_0__IdentificadorDemonstrativo" name="Evento.DemonstrativosValoresDevidos[0].IdentificadorDemonstrativo" type="hidden" value="P2604F90X0000-E1763F303">
+
+                                    <span class="categoria"><span class="valor">101</span> <span class="rotulo">Categoria</span></span>
+                                    <input data-val="true" data-val-number="O campo CodigoCategoria deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__CodigoCategoria" name="Evento.DemonstrativosValoresDevidos[0].CodigoCategoria" type="hidden" value="101">
+
+                                    <span class="estabelecimento"><span class="valor">54.660.176/0001-07</span> <span class="rotulo">Estabelecimento</span></span>
+                                    <input data-val="true" data-val-number="O campo TipoInscricao deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__TipoInscricao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].TipoInscricao" type="hidden" value="1">
+                                    <input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__NumeroInscricao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].NumeroInscricao" type="hidden" value="54660176000107">
+
+                                    <span class="lotacao" data-toggle="tooltip" data-original-title="PHTM0001"><span class="valor">PHTM0001</span> <span class="rotulo">Lotação</span></span>
+                                    <input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__CodigoLotacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].CodigoLotacao" type="hidden" value="PHTM0001">
+
+                                    <span class="matricula" data-toggle="tooltip" data-original-title="17630000303"><span class="valor">17630000303</span> <span class="rotulo">Matrícula</span></span>
+                                    <input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__Matricula" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].Matricula" type="hidden" value="17630000303">
+
+                                    <span class="notificacao-fgts"><span class="valor">-</span> <span class="rotulo">Notificação FGTS</span></span>
+                                    <input id="Evento_DemonstrativosValoresDevidos_0__NumeroNotificacaoAfastamentoFGTS" name="Evento.DemonstrativosValoresDevidos[0].NumeroNotificacaoAfastamentoFGTS" type="hidden" value="">
+                                </div>
+                                <span class="acao-painel"><a href="javascript:void(0)" data-original-title="Ocultar Detalhes" onclick="AlternarDetalhes($(this), '_0_0_0', true)">Ocultar Detalhes</a> <span class=" hide ">| <a href="javascript:void(0)" data-original-title="Excluir" onclick="ConfirmarExclusao('0_0_0_0', 'demonstrativo')">Excluir</a></span></span>
+                                <div class="informacao-demonstrativo_0_0_0">
+                                    <div style="clear: both">
+                                        <h2 class="titulo-tabela">Relação de Rubricas</h2>
+
+                                        <div class="table-responsive tabela-completo">
+                                            <table class="table sem-paginacao mobile-table" border="0">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="chave left" scope="col">Tabela</th>
+                                                        <th class="chave left" scope="col">Código</th>
+                                                        <th scope="col">Tipo</th>
+                                                        <th scope="col">Descrição</th>
+                                                            <th scope="col">Natureza Rubrica</th>
+                                                            <th scope="col">InCp</th>
+                                                            <th scope="col">InFGTS</th>
+                                                            <th scope="col">InPis</th>
+                                                        <th scope="col">Quantidade</th>
+                                                        <th scope="col">Número contrato</th>
+                                                        <th scope="col">Fator</th>
+                                                        <th scope="col">Valor Unitário</th>
+                                                        <th scope="col">Valor</th>
+                                                        <th scope="col">IndIR</th>
+                                                        <th scope="col">Ações</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">0001</td>
+                                                            <td class="center" data-col="Tipo">Vencimento</td>
+                                                            <td class="center" data-col="Descrição">SALARIO NORMAL</td>
+                                                                <td class="center" data-col="Natureza Rubrica">1000</td>
+                                                                <td class="center" data-col="InCp">11</td>
+                                                                <td class="center" data-col="InFGTS">11</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">30,00</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">-</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">1.760,00</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].CodigoRubrica" type="hidden" value="0001"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].FatorRubrica" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].QuantidadeRubrica" type="hidden" value="30,00" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].ValorRubrica" type="hidden" value="1760,00"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].Tipo" type="hidden" value="1"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_0__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[0].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">0040</td>
+                                                            <td class="center" data-col="Tipo">Vencimento</td>
+                                                            <td class="center" data-col="Descrição">HRS INTRA JORNADAS</td>
+                                                                <td class="center" data-col="Natureza Rubrica">1003</td>
+                                                                <td class="center" data-col="InCp">11</td>
+                                                                <td class="center" data-col="InFGTS">11</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">15,00</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">50,00</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">286,00</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].CodigoRubrica" type="hidden" value="0040"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].FatorRubrica" type="hidden" value="50,00"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].QuantidadeRubrica" type="hidden" value="15,00" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].ValorRubrica" type="hidden" value="286,00"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].Tipo" type="hidden" value="1"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_1__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[1].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">0306</td>
+                                                            <td class="center" data-col="Tipo">Vencimento</td>
+                                                            <td class="center" data-col="Descrição">ADIC PERICULOSIDADE</td>
+                                                                <td class="center" data-col="Natureza Rubrica">1203</td>
+                                                                <td class="center" data-col="InCp">11</td>
+                                                                <td class="center" data-col="InFGTS">11</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">30,00</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">30,00</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">528,00</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].CodigoRubrica" type="hidden" value="0306"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].FatorRubrica" type="hidden" value="30,00"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].QuantidadeRubrica" type="hidden" value="30,00" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].ValorRubrica" type="hidden" value="528,00"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].Tipo" type="hidden" value="1"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_2__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[2].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">0430</td>
+                                                            <td class="center" data-col="Tipo">Vencimento</td>
+                                                            <td class="center" data-col="Descrição">DSR S HRS EXTRAS</td>
+                                                                <td class="center" data-col="Natureza Rubrica">1012</td>
+                                                                <td class="center" data-col="InCp">11</td>
+                                                                <td class="center" data-col="InFGTS">11</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">5,63</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">-</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">71,50</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].CodigoRubrica" type="hidden" value="0430"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].FatorRubrica" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].QuantidadeRubrica" type="hidden" value="5,63" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].ValorRubrica" type="hidden" value="71,50"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].Tipo" type="hidden" value="1"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_3__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[3].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">5601</td>
+                                                            <td class="center" data-col="Tipo">Desconto</td>
+                                                            <td class="center" data-col="Descrição">INSS SALARIO</td>
+                                                                <td class="center" data-col="Natureza Rubrica">9201</td>
+                                                                <td class="center" data-col="InCp">31</td>
+                                                                <td class="center" data-col="InFGTS">0</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">8,08</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">8,08</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">213,77</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].CodigoRubrica" type="hidden" value="5601"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].FatorRubrica" type="hidden" value="8,08"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].QuantidadeRubrica" type="hidden" value="8,08" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].ValorRubrica" type="hidden" value="213,77"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].Tipo" type="hidden" value="2"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_4__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[4].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">6006</td>
+                                                            <td class="center" data-col="Tipo">Desconto</td>
+                                                            <td class="center" data-col="Descrição">DESC ALIMENTACAO</td>
+                                                                <td class="center" data-col="Natureza Rubrica">9242</td>
+                                                                <td class="center" data-col="InCp">0</td>
+                                                                <td class="center" data-col="InFGTS">0</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">_</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">-</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">120,00</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].CodigoRubrica" type="hidden" value="6006"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].FatorRubrica" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].QuantidadeRubrica" type="hidden" value="" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].ValorRubrica" type="hidden" value="120,00"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].Tipo" type="hidden" value="2"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_5__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[5].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">8102</td>
+                                                            <td class="center" data-col="Tipo">Informativa</td>
+                                                            <td class="center" data-col="Descrição">FGTS do Mes</td>
+                                                                <td class="center" data-col="Natureza Rubrica">9908</td>
+                                                                <td class="center" data-col="InCp">0</td>
+                                                                <td class="center" data-col="InFGTS">0</td>
+                                                                <td class="center" data-col="InPis">0</td>
+                                                            <td class="center" data-col="Quantidade">8,00</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">-</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">211,64</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].CodigoRubrica" type="hidden" value="8102"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].FatorRubrica" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].QuantidadeRubrica" type="hidden" value="8,00" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].ValorRubrica" type="hidden" value="211,64"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].Tipo" type="hidden" value="3"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_6__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[6].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                        <tr>
+                                                            <td class="chave left" data-col="Tabela">PHVR0000</td>
+                                                            <td class="chave left" data-col="Código">8501</td>
+                                                            <td class="center" data-col="Tipo">Informativa</td>
+                                                            <td class="center" data-col="Descrição">Total Sal Contribuicao</td>
+                                                                <td class="center" data-col="Natureza Rubrica">9901</td>
+                                                                <td class="center" data-col="InCp">0</td>
+                                                                <td class="center" data-col="InFGTS">0</td>
+                                                                <td class="center" data-col="InPis">-</td>
+                                                            <td class="center" data-col="Quantidade">_</td>
+                                                            <td class="center" data-col="Número contrato">-</td>
+                                                            <td class="center" data-col="Fator">100,0</td>
+                                                            <td class="center dinheiro" data-col="Valor Unitário">0,00</td>
+                                                            <td class="center dinheiro" data-col="Valor">2.645,50</td>
+                                                            <td class="center" data-col="IndIR">0</td>
+                                                            <td class="center" data-col="Ações">
+                                                                    <span>-</span>
+                                                            </td>
+                                                        </tr>
+<input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__CodigoRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].CodigoRubrica" type="hidden" value="8501"><input data-val="true" data-val-number="O campo FatorRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__FatorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].FatorRubrica" type="hidden" value="100,0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__IdeTabelaRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].IdeTabelaRubrica" type="hidden" value="PHVR0000"><input data-val="true" data-val-number="O campo QuantidadeRubrica deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__QuantidadeRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].QuantidadeRubrica" type="hidden" value="" class="dinheiro maxdinheiro" maxlength="14"><input data-val="true" data-val-number="O campo ValorRubrica deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__ValorRubrica" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].ValorRubrica" type="hidden" value="2645,50"><input data-val="true" data-val-number="O campo ValorUnitario deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__ValorUnitario" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].ValorUnitario" type="hidden" value=""><input data-val="true" data-val-number="O campo Tipo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__Tipo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].Tipo" type="hidden" value="3"><input data-val="true" data-val-number="O campo IndicativoApuracaoIR deve ser um número." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__IndicativoApuracaoIR" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].IndicativoApuracaoIR" type="hidden" value="0"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__DescontoEmprestimoFolha_InstituicaoFinanceira" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].DescontoEmprestimoFolha.InstituicaoFinanceira" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__DescontoEmprestimoFolha_NumeroContratoEmprestimo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].DescontoEmprestimoFolha.NumeroContratoEmprestimo" type="hidden" value=""><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__DescontoEmprestimoFolha_Observacao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].DescontoEmprestimoFolha.Observacao" type="hidden" value=""><input data-val="true" data-val-number="O campo TipoDesconto deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__ListaItemRemuneracao_7__DescontoEmprestimoFolha_TipoDesconto" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].ListaItemRemuneracao[7].DescontoEmprestimoFolha.TipoDesconto" type="hidden" value="0">                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <input data-val="true" data-val-required="Campo de preenchimento obrigatório." id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__RubricaRequerPlanoSaude" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].RubricaRequerPlanoSaude" type="hidden" value="False">
+
+                                    
+                                    
+
+                                </div>
+                                <div class="row informacao-adicional">
+<div class="form-group col-md-6 col-sm-2"><label for="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].InfoAgenteNocivo.GrauExposicao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Grau de Exposição a Agentes Nocivos">Grau de Exposição a Agentes Nocivos</label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoPerApur/ideEstabLot/remunPerApur/infoAgNocivo/grauExp" class="form-control N not-required" id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__InfoAgenteNocivo_GrauExposicao" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].InfoAgenteNocivo.GrauExposicao" readonly="True"><option value="" disabled=""></option>
+<option selected="selected" value="1">1 - Não ensejador de aposentadoria especial</option>
+<option value="2" disabled="">2 - Ensejador de aposentadoria especial - FAE15_12% (15 anos de contribuição e alíquota de 12%)</option>
+<option value="3" disabled="">3 - Ensejador de aposentadoria especial - FAE20_09% (20 anos de contribuição e alíquota de 9%)</option>
+<option value="4" disabled="">4 - Ensejador de aposentadoria especial - FAE25_06% (25 anos de contribuição e alíquota de 6%)</option>
+</select><span class="field-validation-valid" id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__InfoAgenteNocivo_GrauExposicao_validationMessage"></span></div></div><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__HabilitarInformacaoAgenteNocivo" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].HabilitarInformacaoAgenteNocivo" type="hidden" value="True"><input id="Evento_DemonstrativosValoresDevidos_0__InformacaoPeriodoApuracao_ListaIdeEstabelecimentoLotacao_0__ListaRemunenacaoPerApur_0__HabilitarInformacaoIndicativoSimples" name="Evento.DemonstrativosValoresDevidos[0].InformacaoPeriodoApuracao.ListaIdeEstabelecimentoLotacao[0].ListaRemunenacaoPerApur[0].HabilitarInformacaoIndicativoSimples" type="hidden" value="False">
+                                </div>
+        </section>
+
+        <br>
+
+
+        <section id="informacoes-complementares-rra" class="" onclick="esconderRubrica()">
+
+            <input id="Operacao" name="Operacao" type="hidden" value="">
+                <h2 class="titulo-tabela ">Informações complementares relativas a Rendimentos Recebidos Acumuladamente - RRA</h2>
+                <section id="formulario-informacoes-complementares-rra" style="clear:both" class=" hide ">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group col-md-2 col-sm-2">
+                                <label for="InformacaoRRAAcessoria_Identificador" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Demonstrativo">Demonstrativo<em class="tag-campo-obrigatorio">*</em></label>
+                                <select class="form-control required" id="InformacaoRRAAcessoria_Identificador" name="InformacaoRRAAcessoria.Identificador" aria-required="true"><option value="P2604F90X0000-E1763F303">P2604F90X0000-E1763F303</option>
+</select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-3 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.TipoProcessoRRA" text="Tipo do Processo de RRA" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Código correspondente ao tipo de processo">Tipo do Processo de RRA<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoRRA/tpProcRRA" class="form-control N  required " data-val="true" data-val-number="O campo TipoProcessoRRA deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="InformacaoRRAAcessoria_InformacaoRRA_TipoProcessoRRA" name="InformacaoRRAAcessoria.InformacaoRRA.TipoProcessoRRA" textcomvalue="True" aria-required="true"><option value=""></option>
+<option value="1">1 - Administrativo</option>
+<option value="2">2 - Judicial</option>
+</select><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.TipoProcessoRRA" data-valmsg-replace="true"></span></div></div>
+                            <div class="form-group col-md-3 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.NumeroProcessoRRA" text="Número do Processo de RRA" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número do processo/requerimento administrativo/judicial">Número do Processo de RRA</label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/nrProcRRA" class="form-control C " id="InformacaoRRAAcessoria_InformacaoRRA_NumeroProcessoRRA" maxlength="25" name="InformacaoRRAAcessoria.InformacaoRRA.NumeroProcessoRRA" type="text" value=""><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.NumeroProcessoRRA" data-valmsg-replace="true"></span></span></div>
+                            <div class="form-group col-md-5 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.DescricaoRRA" text="Descrição" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Descrição dos Rendimentos Recebidos Acumuladamente - RRA">Descrição<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/descRRA" class="form-control C  required " id="InformacaoRRAAcessoria_InformacaoRRA_DescricaoRRA" maxlength="50" name="InformacaoRRAAcessoria.InformacaoRRA.DescricaoRRA" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.DescricaoRRA" data-valmsg-replace="true"></span></span></div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group col-md-1 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.QuantidadeMesesRRA" text="Quantidade de meses" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número de meses relativo aos Rendimentos Recebidos Acumuladamente - RRA">Quantidade de meses<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/qtdMesesRRA" class="form-control N  required " data-casasdecimais="1" data-val="true" data-val-number="O valor deve ser um número" data-val-required="Campo de preenchimento obrigatório." id="InformacaoRRAAcessoria_InformacaoRRA_QuantidadeMesesRRA" maiorque="0,00" maxlength="5" name="InformacaoRRAAcessoria.InformacaoRRA.QuantidadeMesesRRA" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.QuantidadeMesesRRA" data-valmsg-replace="true"></span></span></div>
+                            <div class="form-group col-md-2 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaCustasJudiciais" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Valor das despesas com custas judiciais">Valor das despesas com custas judiciais<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/despProcJud/vlrDespCustas" class="form-control N dinheiro required  maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" id="InformacaoRRAAcessoria_InformacaoRRA_DespesaProcessoJudicial_ValorDespesaCustasJudiciais" maxlength="18" name="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaCustasJudiciais" type="text" value="" aria-required="true" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaCustasJudiciais" data-valmsg-replace="true"></span></span></div>
+                            <div class="form-group col-md-2 col-sm-2"><label for="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaAdvogado" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Valor total das despesas com advogado(s)">Valor total das despesas com advogado(s)<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/despProcJud/vlrDespAdvogados" class="form-control N dinheiro required  maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" id="InformacaoRRAAcessoria_InformacaoRRA_DespesaProcessoJudicial_ValorDespesaAdvogado" maxlength="18" name="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaAdvogado" type="text" value="" aria-required="true" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="InformacaoRRAAcessoria.InformacaoRRA.DespesaProcessoJudicial.ValorDespesaAdvogado" data-valmsg-replace="true"></span></span></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group pull-right btn-group">
+                                <input id="alterar-informacoes-complementares-rra" name="alterar:entidade" type="submit" value="Alterar RRA" class="btn btn-primary pull-right hide  disabled ">
+                                <input id="incluir-informacoes-complementares-rra" name="incluir:entidade" type="submit" value="Incluir RRA" class="btn btn-primary pull-right   disabled ">
+                            </div>
+                        </div>
+                        <section class="well">
+                            <div class="row"><div class="form-group col-md-2">
+                                    <input data-val="true" data-val-required="Campo de preenchimento obrigatório." id="PreencherInformacaoAdvogados" name="PreencherInformacaoAdvogados" type="checkbox" value="true"><input name="PreencherInformacaoAdvogados" type="hidden" value="false"> Preencher advogados?
+                                </div></div>
+                            <div id="idAdvogado" class="hide">
+                                <div class="row"><div class="form-group col-md-2 col-sm-2"><label for="InformacaoAdvogadoRRAAcessoria.TipoInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Tipo de inscrição do advogado">Tipo de inscrição do advogado<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/dmDev/infoRRA/ideAdv/tpInsc" class="form-control N  required " data-val="true" data-val-number="O campo TipoInscricao deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="InformacaoAdvogadoRRAAcessoria_TipoInscricao" name="InformacaoAdvogadoRRAAcessoria.TipoInscricao" aria-required="true"><option value=""></option>
+<option value="1">1 - CNPJ</option>
+<option value="2">2 - CPF</option>
+</select><span class="field-validation-valid" data-valmsg-for="InformacaoAdvogadoRRAAcessoria.TipoInscricao" data-valmsg-replace="true"></span></div></div>
+                                    <div class="form-group col-md-3 col-sm-2"><label for="InformacaoAdvogadoRRAAcessoria.NumeroInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número de inscrição do advogado">Número de inscrição do advogado<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/ideAdv/nrInsc" class="form-control C cnpj-alfanumerico required " id="InformacaoAdvogadoRRAAcessoria_NumeroInscricao" maxlength="18" name="InformacaoAdvogadoRRAAcessoria.NumeroInscricao" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="InformacaoAdvogadoRRAAcessoria.NumeroInscricao" data-valmsg-replace="true"></span></span></div>
+                                    <div class="form-group col-md-6 col-sm-6"><label for="InformacaoAdvogadoRRAAcessoria.ValorDespesaAdvogado" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Valor da despesa com o advogado, se houver">Valor da despesa com o advogado, se houver</label><span><input caminho-completo="eSocial/evtRemun/dmDev/infoRRA/ideAdv/vlrAdv" class="form-control N dinheiro maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" id="InformacaoAdvogadoRRAAcessoria_ValorDespesaAdvogado" maxlength="18" name="InformacaoAdvogadoRRAAcessoria.ValorDespesaAdvogado" type="text" value="" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="InformacaoAdvogadoRRAAcessoria.ValorDespesaAdvogado" data-valmsg-replace="true"></span></span></div></div>
+
+                                <div class="row"><div class="form-group pull-right btn-group">
+                                        <a id="btnCancelarAdvogado" class="btn btn-primary pull-right btn-cancelar" href="javascript:void(0)" data-original-title="Cancelar" onclick="LimparEdicaoAdvogado();" style="display: none;">Cancelar</a>
+                                        <a id="btnIncluirAdvogado" class="btn btn-primary pull-right btn-incluir" href="javascript:void(0)" data-original-title="IncluirAdvogado" onclick="IncluirAdvogado();">Incluir Advogado</a>
+                                        <a id="btnAlterarAdvogado" class="btn btn-primary pull-right btn-alterar" href="javascript:void(0)" data-original-title="AlterarAdvogado" onclick="AlterarAdvogado();">Alterar Advogado</a>
+                                    </div></div>
+                            </div>
+
+
+                            <div id="listaAdvogados">
+                                <input id="ListaAdvogadoSerializada" name="ListaAdvogadoSerializada" type="hidden" value="">
+                                <h3 id="mensagemClicarAdvogado" class="titulo-tabela hide" style="display: none;">Clique no advogado para alterar as informações</h3>
+
+                                <div id="mensagemListaAdvogado" class="fade-alert alert alert-info hide">
+                                    <a class="close" onclick="$(this).parent().slideUp(1000, function () { $(this).children().remove(); })">×</a>
+                                    <span>Número de inscrição inválido. O número de inscrição informado já existe na lista. </span>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table sem-paginacao mobile-table" border="0" id="idListaAdvogado">
+                                        <input id="indiceTabela" name="indiceTabela" type="hidden" value="">
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="modal" id="excluirAdvogado">
+                                <div class="modal-header">
+                                    <h3>Atenção:</h3>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Deseja mesmo excluir?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="javascript:void(0)" class="btn btn-primary btn-cancelar" onclick="FecharJanela('excluirAdvogado');">Cancelar</a>
+                                    <a href="javascript:void(0)" class="btn btn-info btn-proximo pull-right" onclick="ExcluirAdvogado()">Excluir Advogado</a>
+                                </div>
+                            </div>
+                        </section>
+                    </fieldset>
+                </section>
+        </section>
+
+        <section id="listagem-informacoes-complementares-rra">
+                <div class="informe-lista-vazia">Nenhuma informação complementar relativa a Rendimentos Recebidos Acumuladamente - RRA cadastrada.</div>
+        </section>
+
+        <section id="informacoes-complementares" class=" hide hide">
+            <h2 class="titulo-tabela">Informação Complementar de Identificação do Trabalhador</h2>
+
+            <section>
+                <div class="row">
+                    <div class="form-group col-md-6 col-sm-2"><label for="Evento.InfoComplementar.NomeTrabalhador" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Nome do Trabalhador">Nome do Trabalhador<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/nmTrab" class="form-control C  required " id="Evento_InfoComplementar_NomeTrabalhador" maxlength="70" name="Evento.InfoComplementar.NomeTrabalhador" readonly="True" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.NomeTrabalhador" data-valmsg-replace="true"></span></span></div>
+
+                    <div class="form-group col-md-2 col-sm-2"><label for="Evento.InfoComplementar.DataNascimento" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Data de Nascimento">Data de Nascimento<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/dtNascto" class="form-control D  required " data-val="true" data-val-date="O campo DataNascimento deve ser uma data." data-val-required="Campo de preenchimento obrigatório." id="Evento_InfoComplementar_DataNascimento" maxlength="10" name="Evento.InfoComplementar.DataNascimento" readonly="True" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.DataNascimento" data-valmsg-replace="true"></span></span></div>
+                </div>
+
+                <section id="info-sucessao" class="hide">
+                    <h2 class="titulo-tabela">Informação de Sucessão de Vínculo Trabalhista</h2>
+
+                    <div class="row">
+                        
+
+                        
+
+                        <div class="form-group col-md-2 col-sm-2"><label for="Evento.InfoComplementar.SucessaoVinculo.TipoInscricao" text="Tipo de Inscrição do Empregador Anterior" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Tipo de Inscrição do Empregador Anterior">Tipo de Inscrição do Empregador Anterior<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/sucessaoVinc/tpInsc" class="form-control N  required " data-val="true" data-val-number="O campo TipoInscricao deve ser um número." id="Evento_InfoComplementar_SucessaoVinculo_TipoInscricao" name="Evento.InfoComplementar.SucessaoVinculo.TipoInscricao" aria-required="true"><option value=""></option>
+<option value="1">1 - CNPJ</option>
+<option value="3">3 - CAEPF</option>
+<option value="4">4 - CNO</option>
+</select><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.SucessaoVinculo.TipoInscricao" data-valmsg-replace="true"></span></div></div>
+
+                        <div class="form-group col-md-3 col-sm-2"><label for="Evento.InfoComplementar.SucessaoVinculo.NumeroInscricao" text="Número de Inscrição do Empregador Anterior" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="CPF/CNPJ do Empregador Anterior">Número de Inscrição do Empregador Anterior<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/sucessaoVinc/nrInsc" class="form-control N  required " data-val-number="O valor deve ser um número" formatadornumeroinscricao="0" id="Evento_InfoComplementar_SucessaoVinculo_NumeroInscricao" name="Evento.InfoComplementar.SucessaoVinculo.NumeroInscricao" readonly="True" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.SucessaoVinculo.NumeroInscricao" data-valmsg-replace="true"></span></span></div>
+
+                        <div class="form-group col-md-3 col-sm-2"><label for="Evento.InfoComplementar.SucessaoVinculo.MatriculaAnterior" text="Matrícula Anterior" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Matrícula do Trabalhador no Empregador Anterior">Matrícula Anterior</label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/sucessaoVinc/matricAnt" class="form-control C " id="Evento_InfoComplementar_SucessaoVinculo_MatriculaAnterior" maxlength="30" name="Evento.InfoComplementar.SucessaoVinculo.MatriculaAnterior" readonly="True" type="text" value=""><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.SucessaoVinculo.MatriculaAnterior" data-valmsg-replace="true"></span></span></div>
+
+                        <div class="form-group col-md-2 col-sm-2"><label for="Evento.InfoComplementar.SucessaoVinculo.DataAdmissao" text="Data de Admissão" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Data de Admisão do Trabalhador">Data de Admissão<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/sucessaoVinc/dtAdm" class="form-control D data required " data-val="true" data-val-date="O campo DataAdmissao deve ser uma data." data-val-required="Campo de preenchimento obrigatório." id="Evento_InfoComplementar_SucessaoVinculo_DataAdmissao" maxlength="10" name="Evento.InfoComplementar.SucessaoVinculo.DataAdmissao" readonly="True" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.SucessaoVinculo.DataAdmissao" data-valmsg-replace="true"></span></span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-8 col-sm-2"><label for="Evento.InfoComplementar.SucessaoVinculo.Observacao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Observação">Observação</label><span><textarea caminho-completo="eSocial/evtRemun/ideTrabalhador/infoComplem/sucessaoVinc/observacao" class="form-control C " cols="20" id="Evento_InfoComplementar_SucessaoVinculo_Observacao" maxlength="255" name="Evento.InfoComplementar.SucessaoVinculo.Observacao" readonly="True" rows="2"></textarea><span class="field-validation-valid" data-valmsg-for="Evento.InfoComplementar.SucessaoVinculo.Observacao" data-valmsg-replace="true"></span></span></div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <section id="remuneracao-outras-empresas" class="">
+            <h2 class="titulo-tabela ">Remunerações em Outras Empresas/Atividades</h2>
+
+
+
+            <section id="formulario-remuneracao-outras-empresas" style="clear:both" class=" hide ">
+                <fieldset>
+                    <div class="row">
+                        <div class="form-group col-md-2 col-sm-2"><label for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.TipoInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Tipo de Inscrição">Tipo de Inscrição<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/ideTrabalhador/infoMV/remunOutrEmpr/tpInsc" class="form-control N  required " data-val="true" data-val-number="O campo TipoInscricao deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_InfoMV_RemuneracaoOutraEmpresaAcessoria_TipoInscricao" name="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.TipoInscricao" aria-required="true"><option value=""></option>
+<option value="1">1 - CNPJ</option>
+<option value="2">2 - CPF</option>
+</select><span class="field-validation-valid" data-valmsg-for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.TipoInscricao" data-valmsg-replace="true"></span></div></div>
+
+                        <div class="form-group col-md-4 col-sm-2"><label for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.NumeroInscricao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número de Inscrição">Número de Inscrição<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoMV/remunOutrEmpr/nrInsc" class="form-control C cnpj cnpj-alfanumerico required " id="Evento_InfoMV_RemuneracaoOutraEmpresaAcessoria_NumeroInscricao" maxlength="18" name="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.NumeroInscricao" type="text" value="" aria-required="true"><span class="field-validation-valid" data-valmsg-for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.NumeroInscricao" data-valmsg-replace="true"></span></span></div>
+
+                        <div class="form-group col-md-4 col-sm-4">
+                            <label for="Evento_InfoMV_RemuneracaoOutraEmpresaAcessoria_CodigoCategoria" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Categoria">Categoria<em class="tag-campo-obrigatorio">*</em></label>
+                            <select class="form-control required" id="Evento_InfoMV_RemuneracaoOutraEmpresaAcessoria_CodigoCategoria" name="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.CodigoCategoria" aria-required="true"><option value="101">101 - Empregado - Geral, inclusive o empregado público da administração direta ou indireta contratado pela CLT</option>
+<option value="102">102 - Empregado - Trabalhador rural por pequeno prazo da Lei 11.718/2008</option>
+<option value="103">103 - Empregado - Aprendiz</option>
+<option value="105">105 - Empregado - Contrato a termo firmado nos termos da Lei 9.601/1998</option>
+<option value="106">106 - Trabalhador temporário - Contrato nos termos da Lei 6.019/1974</option>
+<option value="107">107 - Empregado - Contrato de trabalho Verde e Amarelo - sem acordo para antecipação mensal da multa rescisória do FGTS</option>
+<option value="108">108 - Empregado - Contrato de trabalho Verde e Amarelo - com acordo para antecipação mensal da multa rescisória do FGTS</option>
+<option value="111">111 - Empregado - Contrato de trabalho intermitente</option>
+<option value="201">201 - Trabalhador avulso portuário</option>
+<option value="202">202 - Trabalhador avulso não portuário</option>
+<option value="301">301 - Servidor público titular de cargo efetivo, magistrado, ministro de Tribunal de Contas, conselheiro de Tribunal de Contas e membro do Ministério Público</option>
+<option value="302">302 - Servidor público ocupante de cargo exclusivo em comissão</option>
+<option value="303">303 - Exercente de mandato eletivo</option>
+<option value="304">304 - Servidor público exercente de mandato eletivo, inclusive com exercício de cargo em comissão</option>
+<option value="305">305 - Servidor público indicado para conselho ou órgão deliberativo, na condição de representante do governo, órgão ou entidade da administração pública</option>
+<option value="306">306 - Servidor público contratado por tempo determinado, sujeito a regime administrativo especial definido em lei própria</option>
+<option value="307">307 - Militar dos Estados e Distrito Federal</option>
+<option value="308">308 - Conscrito</option>
+<option value="309">309 - Agente público - Outros</option>
+<option value="310">310 - Servidor público eventual</option>
+<option value="311">311 - Ministros, juízes, procuradores, promotores ou oficiais de justiça à disposição da Justiça Eleitoral</option>
+<option value="312">312 - Auxiliar local</option>
+<option value="313">313 - Servidor público exercente de atividade de instrutoria, curso ou concurso, convocado para pareceres técnicos, depoimentos, aditância no exterior ou demais atividades vinculadas ao regime próprio</option>
+<option value="314">314 - Militar das Forças Armadas</option>
+<option value="401">401 - Dirigente sindical - Informação prestada pelo sindicato</option>
+<option value="410">410 - Trabalhador cedido/exercício em outro órgão/juiz auxiliar - Informação prestada pelo cessionário/destino</option>
+<option value="501">501 - Dirigente sindical - Segurado especial</option>
+<option value="701">701 - Contribuinte individual - Autônomo em geral, exceto se enquadrado em uma das demais categorias de contribuinte individual</option>
+<option value="711">711 - Contribuinte individual - Transportador autônomo de passageiros</option>
+<option value="712">712 - Contribuinte individual - Transportador autônomo de carga</option>
+<option value="721">721 - Contribuinte individual - Diretor não empregado, com FGTS</option>
+<option value="722">722 - Contribuinte individual - Diretor não empregado, sem FGTS</option>
+<option value="723">723 - Contribuinte individual - Empresário, sócio e membro de conselho de administração ou fiscal</option>
+<option value="731">731 - Contribuinte individual - Cooperado que presta serviços por intermédio de cooperativa de trabalho</option>
+<option value="734">734 - Contribuinte individual - Transportador cooperado que presta serviços por intermédio de cooperativa de trabalho</option>
+<option value="738">738 - Contribuinte individual - Cooperado filiado a cooperativa de produção</option>
+<option value="741">741 - Contribuinte individual - Microempreendedor individual</option>
+<option value="751">751 - Contribuinte individual - Magistrado classista temporário da Justiça do Trabalho ou da Justiça Eleitoral que seja aposentado de qualquer regime previdenciário</option>
+<option value="761">761 - Contribuinte individual - Associado eleito para direção de cooperativa, associação ou entidade de classe de qualquer natureza ou finalidade, bem como o síndico ou administrador eleito para exercer atividade de direção condominial, desde que recebam remuneração</option>
+<option value="771">771 - Contribuinte individual - Membro de conselho tutelar, nos termos da Lei 8.069/1990</option>
+<option value="781">781 - Ministro de confissão religiosa ou membro de vida consagrada, de congregação ou de ordem religiosa</option>
+<option value="901">901 - Estagiário</option>
+<option value="902">902 - Médico residente, residente em área profissional de saúde ou médico em curso de formação</option>
+<option value="903">903 - Bolsista</option>
+<option value="904">904 - Participante de curso de formação, como etapa de concurso público, sem vínculo de emprego/estatutário</option>
+<option value="905">905 - Atleta não profissional em formação que receba bolsa</option>
+<option value="906">906 - Beneficiário do Programa Nacional de Prestação de Serviço Civil Voluntário</option>
+</select>
+                        </div>
+
+                        <div class="form-group col-md-2 col-sm-2"><label for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.ValorRemuneracaoOE" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Valor da Remuneração">Valor da Remuneração<em class="tag-campo-obrigatorio">*</em></label><span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/infoMV/remunOutrEmpr/vlrRemunOE" class="form-control N dinheiro  required  maxdinheiro" data-casasdecimais="2" data-val="true" data-val-number="O valor deve ser um número" data-val-required="Campo de preenchimento obrigatório." id="Evento_InfoMV_RemuneracaoOutraEmpresaAcessoria_ValorRemuneracaoOE" maxlength="18" name="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.ValorRemuneracaoOE" type="text" value="" aria-required="true" maxdinheiro="99999999999,99"><span class="field-validation-valid" data-valmsg-for="Evento.InfoMV.RemuneracaoOutraEmpresaAcessoria.ValorRemuneracaoOE" data-valmsg-replace="true"></span></span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group pull-right btn-group">
+                            <input id="alterar-remuneracao-outras-empresas" name="alterar:entidade" type="submit" value="Alterar" class="btn btn-primary pull-right hide  disabled ">
+                            <input id="incluir-remuneracao-outras-empresas" name="incluir:entidade" type="submit" value="Incluir" class="btn btn-primary pull-right   disabled ">
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+        </section>
+
+        <section id="informacao-remuneracao-outras-empresas">
+                <div class="informe-lista-vazia">Nenhuma informação de remuneração em outras empresas ou atividades cadastrada.</div>
+        </section>
+
+        <section id="processos" class="">
+            <h2 class="titulo-tabela ">Processos</h2>
+
+            <section id="formulario-processo" style="clear:both" class=" hide ">
+                <fieldset>
+                    <div class="row">
+                        <div class="form-group col-md-3 col-sm-2"><label for="Evento.ProcessoAcessorio.TipoTributo" text="Abrangência da Decisão" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Abrangência da decisão">Abrangência da Decisão<em class="tag-campo-obrigatorio">*</em></label><div><select caminho-completo="eSocial/evtRemun/ideTrabalhador/procJudTrab/tpTrib" class="form-control N  required " data-val="true" data-val-number="O campo TipoTributo deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_ProcessoAcessorio_TipoTributo" name="Evento.ProcessoAcessorio.TipoTributo" suprimiroptionvazio="True" aria-required="true"><option value="1">1 - IRRF</option>
+<option value="2">2 - Contribuições sociais do trabalhador</option>
+</select><span class="field-validation-valid" data-valmsg-for="Evento.ProcessoAcessorio.TipoTributo" data-valmsg-replace="true"></span></div></div>
+                        <div class="form-group col-md-3 col-sm-2"><label for="Evento.ProcessoAcessorio.NumeroProcessoJudicial" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Número do Processo">Número do Processo<em class="tag-campo-obrigatorio">*</em></label><span><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/procJudTrab/nrProcJud" class="form-control C  required  autocomplete-pesquisa ui-autocomplete-input" id="Evento_ProcessoAcessorio_NumeroProcessoJudicial" maxlength="25" name="Evento.ProcessoAcessorio.NumeroProcessoJudicial" type="text" value="" aria-required="true" placeholder="Informe o número do processo" autocomplete="off"><span class="field-validation-valid" data-valmsg-for="Evento.ProcessoAcessorio.NumeroProcessoJudicial" data-valmsg-replace="true"></span><input type="hidden" name="valorFoiSelecionado" id="valorFoiSelecionado"></span></div>
+                        <div class="form-group col-md-3 col-sm-2"><label for="Evento.ProcessoAcessorio.CodigoSuspensao" title="" data-toggle="tooltip" data-placement="top" class="control-label " data-original-title="Código do Indicativo da Suspensão" style="">Código do Indicativo da Suspensão<em class="tag-campo-obrigatorio">*</em></label><span><span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span><input caminho-completo="eSocial/evtRemun/ideTrabalhador/procJudTrab/codSusp" class="form-control N apenasnumero required autocomplete-pesquisa ui-autocomplete-input" data-val-number="O valor deve ser um número" id="Evento_ProcessoAcessorio_CodigoSuspensao" maxlength="14" name="Evento.ProcessoAcessorio.CodigoSuspensao" type="text" value="" aria-required="true" data-val-required="Campo de preenchimento obrigatório." aria-describedby="Evento_ProcessoAcessorio_CodigoSuspensao-error" aria-invalid="false" placeholder="Informe o código da suspensão" autocomplete="off"><span class="field-validation-valid" data-valmsg-for="Evento.ProcessoAcessorio.CodigoSuspensao" data-valmsg-replace="true"></span><input type="hidden" name="valorFoiSelecionado" id="valorFoiSelecionado"></span></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group pull-right btn-group">
+                            <input id="alterar-processo" name="alterar:entidade" type="submit" value="Alterar" class="btn btn-primary pull-right hide  disabled ">
+                            <input id="incluir-processo" name="incluir:entidade" type="submit" value="Incluir" class="btn btn-primary pull-right   disabled ">
+                        </div>
+                    </div>
+                </fieldset>
+            </section>
+        </section>
+
+        <section id="informacao-processo">
+                <div class="informe-lista-vazia">Nenhum processo cadastrado.</div>
+        </section>
+
+        
+    <h2 class="titulo-tabela">Identificação do Evento</h2>
+    <section id="identificacao-evento" class="well">
+        <div class="row"><div class="form-group identificacao-evento-id">
+                <label class="control-label" for="IdEventoXml">Identificador do Evento</label>
+                <input class="form-control" id="IdEventoXml" name="IdEventoXml" readonly="readonly" type="text" value="ID1546601760000002026051208375200030">
+            </div>
+            <div class="form-group identificacao-evento-numero-recibo">
+                <label class="control-label" for="NrReciboEventoOriginal">Número do recibo</label>
+                <input class="form-control" id="NrReciboEventoOriginal" name="NrReciboEventoOriginal" readonly="readonly" type="text" value="1.1.0000000040707940237">
+            </div>
+            <div class="form-group identificacao-evento-processo-emissor">
+                <label class="control-label" for="DescricaoProcEmi">Processo de emissão do evento</label>
+                <input class="form-control" id="DescricaoProcEmi" name="DescricaoProcEmi" readonly="readonly" type="text" value="1 - Aplicativo do empregador">
+            </div>
+            <div class="form-group identificacao-evento-versao-processo">
+                <label class="control-label" for="VerProc">Versão do Processo</label>
+                <input class="form-control" id="VerProc" name="VerProc" readonly="readonly" type="text" value="S010300">
+            </div></div>
+    </section>
+
+
+        <input id="Evento_IdEventoXml" name="Evento.IdEventoXml" type="hidden" value="ID1546601760000002026051208375200030">
+        <input id="Evento_NrReciboEventoOriginal" name="Evento.NrReciboEventoOriginal" type="hidden" value="1.1.0000000040707940237">
+        <input data-val="true" data-val-number="O campo ProcEmi deve ser um número." data-val-required="Campo de preenchimento obrigatório." id="Evento_ProcEmi" name="Evento.ProcEmi" type="hidden" value="1">
+        <input id="Evento_DescricaoProcEmi" name="Evento.DescricaoProcEmi" type="hidden" value="1 - Aplicativo do empregador">
+        <input id="Evento_VerProc" name="Evento.VerProc" type="hidden" value="S010300">
+
+        <div style="margin-top: 26px;">
+
+<a class="btn btn-primary pull-right margin-right-10px download" href="https://www.esocial.gov.br/portal/FolhaPagamento/RemuneracaoCompleto/DownloadEvento?idEvento=&amp;recibo=1.1.0000000040707940237">Baixar XML </a>            <a area="FolhaPagamento" class="btn btn-voltar" href="/portal/FolhaPagamento/ListaRemuneracao?competencia=202604&amp;tipo=1200&amp;possuiDae=False">Voltar</a>
+
+        </div>
+
+        <div class="modal" id="excluir">
+            <div class="modal-header">
+                <h3>Atenção:</h3>
+            </div>
+            <div class="modal-body">
+                <p>Deseja mesmo excluir?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0)" class="btn btn-primary btn-cancelar" onclick="FecharJanela('excluir');">Cancelar</a>
+                <input id="btnExcluir" name="excluir:entidade" type="submit" value="Continuar" class="btn btn-primary pull-right">
+            </div>
+        </div>
+    </div>
